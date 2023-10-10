@@ -1,0 +1,14 @@
+.App {
+    
+
+    background-color: #22244A;
+}
+
+.movies_wrapper {
+    margin:0px 7px;
+    overflow-x: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10%, auto));
+    gap: 20px 10px;
+}
