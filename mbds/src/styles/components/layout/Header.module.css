@@ -1,0 +1,45 @@
+.header__wrapper {
+    padding: 0 5rem;  
+    background-color: #22244A;
+    
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.header__image {
+    margin: 0 4rem;
+    width: 10rem;
+}
+
+.header__link {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.header__login {
+    margin: 0 1rem;
+    display: flex;
+
+    align-items: center;
+}
+
+.header__login button {
+    margin: 0 1rem;
+
+    width: 4.5rem;
+    height: 2rem;
+    border-radius: 15px;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #22244A;
+}
+
+.header__login p {
+    color: white;
+
+    font-size: 0.8rem;
+    font-weight: 400;
+}
