@@ -1,0 +1,13 @@
+.wrapper {
+  padding: 3rem 10rem;
+}
+
+.wrapper h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.wrapper a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}

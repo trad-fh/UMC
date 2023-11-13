@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import "../styles/components/Movie.css"
 
 
 
 
 const Movie = ({ movie }) => {
+    const navigate = useNavigate();
+
     const { title, vote_average, poster_path, overview } = movie;
 
     //overview 축약
@@ -12,7 +15,7 @@ const Movie = ({ movie }) => {
     : overview;
 
     return (
-    <div className="movie__container">
+    <div className="movie__container" onClick={() => navigate(`/movie/${title}`, {state: {movie}})}>
         <div className="movie__wrapper">
             <h4>{title}</h4>
             <p>{shortenedOverview}</p>

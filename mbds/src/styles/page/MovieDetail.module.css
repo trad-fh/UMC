@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  padding: 3rem 10rem;
+  justify-content: center;
+}
+
+.wrapper img {
+  width: 20rem;
+}
+
+.wrapper h2 {
+  margin: 0 5rem;
+}

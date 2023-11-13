@@ -7,8 +7,10 @@ import Home from "./page/Home";
 import Movies from "./page/Movies";
 import NotFound from "./page/NotFound";
 import TV from "./page/TV";
+import MovieDetail from "./page/MovieDetail";
 
 import "./styles/App.css";
+
 
 
 function App() {
@@ -20,8 +22,10 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/celebrity" element={<Celebrity />} />
           <Route path="/movies" element={<Movies />} />
+          <Route path="/movie/:movieTitle" element={<MovieDetail />} />
           <Route path="/notFound" element={<NotFound />} />
           <Route path="/tv" element={<TV />} />
+          <Route path={"*"} element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
     </div>
