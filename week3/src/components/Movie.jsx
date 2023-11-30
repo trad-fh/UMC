@@ -1,6 +1,8 @@
 import "../styles/components/Movie.css"
 
 
+
+
 const Movie = ({ movie }) => {
     const { title, vote_average, poster_path, overview } = movie;
 

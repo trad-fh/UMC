@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import styled from "../../styles/components/layout/Header.module.css"
 
 export default function Header() {
-  const [isLogin, setIsLogin] = useState(false);
 
   return (
   <nav className={styled.header__wrapper}>
@@ -26,8 +25,8 @@ export default function Header() {
     </div>
 
     <div className={styled.header__login}>
-      <button onClick={() => setIsLogin(!isLogin)}>{isLogin ? "로그아웃": "로그인"}</button>
-      <p>{isLogin ? "환영합니다!" : "로그인 해주세요!"}</p>
+      <Link to='/login'><button>로그인</button></Link>
+      {/* <p>{isLogin ? "환영합니다!" : "로그인 해주세요!"}</p> */}
     </div>
   </nav>
   );

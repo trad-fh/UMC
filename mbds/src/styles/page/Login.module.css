@@ -1,0 +1,36 @@
+.wrapper {
+  padding: 1rem max(20%, 5rem);
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_form input {
+  margin-top: 1rem;
+  height: 2.5rem;
+
+  font-size: 1rem;
+}
+
+.login_form p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+  color: red;
+}
+
+.submit_btn {
+  margin-top: 1rem;
+  border-radius: 20px;
+  background-color: #031140;
+  height: 2.5rem;
+
+  font-weight: 700;
+  color: white;
+}
+
+.submit_btn:disabled {
+  background-color: #808080;
+  color: black;
+}

@@ -4,10 +4,10 @@ import "../styles/components/Movie.css"
 
 
 
-const Movie = ({ movie }) => {
+const VideoInfo = ({ type, content }) => {
     const navigate = useNavigate();
 
-    const { title, vote_average, poster_path, overview } = movie;
+    const { name, title, vote_average, poster_path, overview } = content;
 
     //overview 축약
     const shortenedOverview = overview.length > 150 
@@ -15,18 +15,18 @@ const Movie = ({ movie }) => {
     : overview;
 
     return (
-    <div className="movie__container" onClick={() => navigate(`/movie/${title}`, {state: {movie}})}>
+    <div className="movie__container" onClick={() => navigate(`/${type}/${title || name}`, {state: content})}>
         <div className="movie__wrapper">
-            <h4>{title}</h4>
+            <h4>{title || name}</h4>
             <p>{shortenedOverview}</p>
         </div>
         <div className="movie__image"><img src={`https://image.tmdb.org/t/p/w1280/${poster_path}`} alt="poster" />
         </div>
         <div className="movie__description">
-            <h3>{title}</h3>
+            <h3>{title || name}</h3>
             <span>{vote_average}</span>
         </div>
     </div>);
 }
 
-export default Movie;
+export default VideoInfo;
